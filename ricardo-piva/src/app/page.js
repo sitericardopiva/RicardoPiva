@@ -6,6 +6,7 @@ import CarrosselHome from "@/components/carrosselHome";
 import { handleJSONfiles } from "@/utils/jsonHandler";
 import { handleJSONfile } from "@/utils/jsonHandler";
 import React from "react";
+import SobreMim from "@/components/sobreMim";
 
 export default function Home() {
   const home = handleJSONfile(`./content/paginas/home.json`);
@@ -41,12 +42,11 @@ export default function Home() {
     <>
       <Inicio titulo={tituloHome} imagem={imagemHome} />
       <TextoBarraHome {...textoBarraHome} />
-      <ImagemComBotao {...imgButResultados} />
+      <SobreMim {...SobreMim} />
       <ServicosHome
         titulo={home.servicosHome.tituloServicos}
         servicos={servicos}
       />
-      <ImagemComBotao {...imgButMembros} />
       <CarrosselHome posts={posts} titulo={tituloCarrossel} />
     </>
   );
