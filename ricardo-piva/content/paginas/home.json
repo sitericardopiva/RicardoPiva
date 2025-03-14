@@ -4,6 +4,9 @@
     "titulo": "",
     "texto": ""
   },
+  "sobre": {
+    "imagem": "/uploads/rp-foto.png"
+  },
   "imgBotaoRes": {
     "imagem": "/uploads/chris.jpg",
     "titulo": "MELHORE SEUS RESULTADOS",

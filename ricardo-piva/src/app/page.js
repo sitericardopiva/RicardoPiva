@@ -15,6 +15,7 @@ export default function Home() {
 
   const tituloHome = home.inicioHome.titulo;
   const imagemHome = home.inicioHome.imagem;
+  const imagemSobre = home.sobre.imagem;
 
   const textoBarraHome = {
     texto: home.inicioHome.texto,
@@ -41,8 +42,7 @@ export default function Home() {
   return (
     <>
       <Inicio titulo={tituloHome} imagem={imagemHome} />
-      <TextoBarraHome {...textoBarraHome} />
-      <SobreMim {...SobreMim} />
+      <SobreMim foto={imagemSobre} />
       <ServicosHome
         titulo={home.servicosHome.tituloServicos}
         servicos={servicos}

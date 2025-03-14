@@ -7,7 +7,7 @@
 }
 
 html {
-  background-color: #262626;
+  background-color: #202020;
 }
 
 * {
@@ -23,7 +23,7 @@ header {
   justify-content: space-between;
   height: 80px;
   padding: 0 2rem;
-  background-color: #262626;
+  background-color: #202020;
   color: white;
 }
 
