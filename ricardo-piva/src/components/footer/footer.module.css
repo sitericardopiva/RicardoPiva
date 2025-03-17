@@ -6,6 +6,7 @@
   justify-content: space-between;
   gap: 1vh;
   position: absolute;
+  background-color: #083050;
 }
 
 .bgImgHandle {
@@ -50,7 +51,7 @@
 }
 
 .contactText {
-  color: #382f76;
+  color: #A7A9AC;
 }
 
 .socialIcons {
@@ -77,7 +78,7 @@
   gap: 0.5vw;
   justify-content: center;
   align-items: center;
-  color: #777;
+  color: #A7A9AC;
   justify-content: flex-end;
 }
 
@@ -101,7 +102,7 @@
 .developedByLink {
   display: flex;
   align-items: center;
-  color: #777;
+  color: #A7A9AC;
 }
 
 .developedByCover {

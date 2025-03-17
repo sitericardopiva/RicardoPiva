@@ -17,7 +17,7 @@
 
 .border{
   width: 100%;
-  height: 70vh;
+  height: 85vh;
   border: 0.5vh solid #083050;
   display: flex;
   align-items: center;
@@ -26,7 +26,7 @@
 
 .imagem{
   width: 26rem;
-  height: 80%;
+  height: 85%;
   top: 50%;
   transform: translateY(-50%);
   position: absolute;

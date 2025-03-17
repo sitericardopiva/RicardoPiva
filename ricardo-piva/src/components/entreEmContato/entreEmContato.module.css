@@ -1,0 +1,43 @@
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%   
+}
+
+.h1{
+    font-size: 3.5rem;
+    color: #A7A9AC;
+}
+
+.p{
+    font-size: 1rem;
+    color: #A7A9AC;
+}
+
+.smalltextbox{
+    height: 5vh;
+    width: 60%; 
+    background-color: transparent;
+    border: 0.5vh solid #A7A9AC;
+}
+
+.bigtextbox{
+    height: 25vh;
+    width: 60%; 
+    background-color: transparent;
+    border: 0.5vh solid #A7A9AC;
+}
+
+.sendButton{
+    padding-top: 0.3%;
+    width: 20vw;
+    height: 5vh;
+    background-color: transparent;
+    border: 0.35vh solid #A7A9AC;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
