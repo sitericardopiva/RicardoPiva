@@ -1,2 +1,2 @@
 # RicardoPiva
-Repositório para a landing page do Ricardo Piva Advogado
+Repositório para a landing page do advogado Ricardo Piva 
