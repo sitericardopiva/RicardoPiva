@@ -11,44 +11,44 @@
 
 
 .container h1{
-    font-size: 3.5rem;
+    font-size: 3.2rem;
 }
 
 .container p{
-    font-size: 1.2rem;    
+    font-size: 1.5rem;    
 }
 
 .smalltextbox{
-    height: 5vh;
-    width: 60%; 
+    height: 2.5rem;
+    width: 75%; 
     background-color: transparent;
-    border: 0.5vh solid #A7A9AC;
+    border: 0.25vh solid #A7A9AC;
 }
 
 .bigtextbox{
-    height: 25vh;
-    width: 60%; 
+    height: 12rem;
+    width: 75%; 
     background-color: transparent;
-    border: 0.5vh solid #A7A9AC;
+    border: 0.25vh solid #A7A9AC;
 }
 
 .sendButton{
     
-    width: 6vw;
-    height: 5vh;
+    width: 6.5rem;
+    height: 2.5rem;
     background-color: transparent;
-    border: 0.35vh solid #A7A9AC;
+    border: 0.25vh solid #A7A9AC;
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-radius: 3vh;
-    transition: background-color 0.05s ease-in-out;
-    transition: transform 0.05s ease-in-out;
+    border-radius: 3rem;
+    transition: background-color 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out;
     
 }
 
 .sendButton:hover{
     background-color: #A7A9AC;
     color: #083050;
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
