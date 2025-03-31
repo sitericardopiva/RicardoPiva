@@ -1,124 +1,32 @@
 "use client";
 
-import Link from "next/link";
-import Image from "next/image";
+
 import styles from "./footer.module.css";
-import { FaInstagram, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import Image from "next/image";
 
-import logoEmpresa from "../../../public/uploads/img/IDE_logo.png";
-
-const handleMove = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-};
-
-export default function Footer({ contato, footer }) {
+export default function Footer({foto}) {
   return (
     <>
-      <div className={styles.footer}>
-        <div className={styles.linearGradient} />
-        <div className={styles.topPart}>
-          {/* <Link href="/" onClick={handleMove}>
-              <Image
-                src={footer.logo}
-                fill
-                style={{objectFit: 'contain'}}
-                className={styles.empresaLogo}
-                alt="Logo"
-              />
-          </Link> */}
-          <div className={styles.contactSocials}>
-            <h3 className={styles.contactText}>{footer.textoContato}</h3>
-            <div className={styles.socialIcons}>
-              <a
-                className={styles.linkedinIcon}
-                href={contato.linkedin}
-                target="_blank"
-              >
-                <FaLinkedin size={40} />
-              </a>
-              <a
-                className={styles.mailIcon}
-                href={`mailto:${contato.email}`}
-                target="_blank"
-              >
-                <FaEnvelope size={40} />
-              </a>
-              <a
-                className={styles.instagramIcon}
-                href={contato.instagram}
-                target="_blank"
-              >
-                <FaInstagram size={40} />
-              </a>
-            </div>
-          </div>
+    <div className={styles.footer}>
+        <div className={styles.container}>
+          <h1>Endereço</h1>
+          <h2>Rua Fulano Ciclano de Beltrano, 1234</h2>
+          <h2>emailexemplo@dominio.com.br</h2>
+          <h2>5551 987654321</h2>
         </div>
-        <div className={styles.bottomPart}>
-          <div className={styles.membershipIcons}>
-            <a
-              className={styles.watermarkCover}
-              href={footer.link1}
-              target="_blank"
-            >
-              <Image
-                src={footer.watermark1}
-                fill
-                style={{ objectFit: "contain" }}
-                className={styles.watermark}
-                quality={100}
-                alt={footer.link1}
-              />
-            </a>
-            <a
-              className={styles.watermarkCover}
-              href={footer.link2}
-              target="_blank"
-            >
-              <Image
-                src={footer.watermark2}
-                fill
-                style={{ objectFit: "contain" }}
-                className={styles.watermark}
-                quality={100}
-                alt={footer.link2}
-              />
-            </a>
-            <a
-              className={styles.watermarkCover}
-              href={footer.link3}
-              target="_blank"
-            >
-              <Image
-                src={footer.watermark3}
-                fill
-                style={{ objectFit: "contain" }}
-                className={styles.watermark}
-                quality={100}
-                alt={footer.link3}
-              />
-            </a>
+        <div className={styles.container}>
+          <h1>Localização</h1>
+          <div className={styles.imagem}>
+            <Image
+              src={foto}
+              fill
+              style={{ objectFit: "cover" }}
+              alt="Foto Localização"
+            />
           </div>
-          <div className={styles.footerText}>
-            <p className={styles.footerText}>{footer.copy}</p>
-          </div>
-        </div>
-        <div className={styles.developedBy}>
-          <a
-            className={styles.developedByLink}
-            href="https://idejr.com.br"
-            target="_blank"
-          >
-            <div className={styles.developedByCover}>
-              <Image
-                src={logoEmpresa}
-                alt="Logo da IDE Jr"
-                className={styles.ideLogo}
-              />
-            </div>
-            <p>Desenvolvido por IDE - UFRGS</p>
-          </a>
-        </div>
-      </div>
+        </div>  
+    </div>
     </>
-  );
+  )
 }
+        
