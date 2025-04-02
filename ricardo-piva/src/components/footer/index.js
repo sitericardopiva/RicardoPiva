@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Footer({foto}) {
   return (
     <>
-    <div className={styles.footer}>
+      <div className={styles.footer}>
         <div className={styles.container}>
           <h1>Endereço</h1>
           <h2>Rua Fulano Ciclano de Beltrano, 1234</h2>
@@ -16,17 +16,20 @@ export default function Footer({foto}) {
         </div>
         <div className={styles.container}>
           <h1>Localização</h1>
-          <div className={styles.imagem}>
-            <Image
-              src={foto}
-              fill
-              style={{ objectFit: "cover" }}
-              alt="Foto Localização"
-            />
+          <div className={styles.map}>
+            <iframe
+              src={`https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=Rua+Fulano+Ciclano+de+Beltrano,1234`}
+              width="100%"
+              height="300"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
-        </div>  
-    </div>
+        </div>
+      </div>
     </>
-  )
+  );
 }
         
