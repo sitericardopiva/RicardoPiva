@@ -1,0 +1,20 @@
+{
+  "name": "ricardopiva",
+  "version": "1.0.0",
+  "description": "Repositório para a landing page do advogado Ricardo Piva",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrocinio-ptr/RicardoPiva.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patrocinio-ptr/RicardoPiva/issues"
+  },
+  "homepage": "https://github.com/patrocinio-ptr/RicardoPiva#readme"
+}
