@@ -1,7 +1,8 @@
 export function validateEmail(email) {
-    const re = /\S+@\S+\.\S+/;
-    return re.test(email);
-  }
+    if (typeof email !== "string") return false;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
 
 export function formatPhoneNumber(phone) {
     if (typeof phone !== "string") return "";
