@@ -65,7 +65,7 @@ export default function RootLayout({ children }) {
           <Navbar contato={contato} nav={nav} />
         </React.Fragment>
         {children}
-        <Footer contato={contato} footer={foo} />
+        <Footer/>
       </body>
     </html>
   );
