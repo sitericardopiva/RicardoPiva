@@ -1,8 +1,5 @@
-import ImagemComBotao from "@/components/imagemComBotao";
 import ServicosHome from "@/components/servicosHome";
 import Inicio from "@/components/inicio";
-import TextoBarraHome from "@/components/textoBarraHome/index";
-import CarrosselHome from "@/components/carrosselHome";
 import { handleJSONfiles } from "@/utils/jsonHandler";
 import { handleJSONfile } from "@/utils/jsonHandler";
 import React from "react";
@@ -12,44 +9,21 @@ import EntreEmContato from "@/components/entreEmContato";
 
 export default function Home() {
   const home = handleJSONfile(`./content/paginas/home.json`);
-  const posts = handleJSONfiles("./content/posts");
   const servicos = handleJSONfiles("./content/servicos");
 
   const tituloHome = home.inicioHome.titulo;
   const imagemHome = home.inicioHome.imagem;
   const imagemSobre = home.sobre.imagem;
-  
-  
-
-  const textoBarraHome = {
-    texto: home.inicioHome.texto,
-  };
-
-  const imgButResultados = {
-    imagem: home.imgBotaoRes.imagem,
-    titulo: home.imgBotaoRes.titulo,
-    texto: home.imgBotaoRes.texto,
-    textoBotao: home.imgBotaoRes.textoBotao,
-    link: "/servicos/#formServicos",
-  };
-
-  const imgButMembros = {
-    imagem: home.imgBotaoMem.imagem,
-    titulo: home.imgBotaoMem.titulo,
-    texto: home.imgBotaoMem.texto,
-    textoBotao: home.imgBotaoMem.textoBotao,
-    link: "/quemSomos/#formQuemSomos",
-  };
-
-  const tituloCarrossel = home.carrosselHome.tituloCarrossel;
+  const logoServicos = home.servicos.logo;
 
   return (
     <>
       <Inicio titulo={tituloHome} imagem={imagemHome} />
       <SobreMim foto={imagemSobre} />
       <ServicosHome
-        titulo={home.servicosHome.tituloServicos}
+        titulo={"ÁREAS DE ATUAÇÃO"}
         servicos={servicos}
+        logoServicos={logoServicos}
       /> 
       <EntreEmContato/>
     </>
