@@ -21,7 +21,7 @@ export default function SobreMim({foto}){
                         <p>
                             Lorem Ipsum is simply dummy text of the  <br />   
                             printing and typesetting industry. Lorem <br />
-                            Ipsum has been the industry's standard <br />
+                            Ipsum has been the industry&aposs standard <br />
                             dummy text . <br />
                             <br />
                             Ever since the 1500s, when an <br />
