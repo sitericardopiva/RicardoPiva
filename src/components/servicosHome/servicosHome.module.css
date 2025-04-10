@@ -8,6 +8,7 @@
 .titleText {
   display: flex;
   justify-content: center;
+  font-family: var(--font-lucida-bright);
   font-size: 4rem;
   text-align: center;
   color: #A7A9AC;
@@ -32,18 +33,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 300px;
+  width: 25rem;
+  height: 19rem;
   background-color: #083050;
   border: 2px solid #A7A9AC;
 }
 
 .serviceName {
+  font-family: var(--font-lucida-bright);
   color: #A7A9AC;
   justify-content: center;
   text-align: center;
-  margin-bottom: 1.2rem;
-  margin-top: 1.2rem;
+  margin: 1rem 0;
   align-items: center;
 }
 
@@ -52,8 +53,9 @@
 }
 
 .serviceText {
+  font-family: var(--font-gotham-light);
   color: #A7A9AC;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .imagem {

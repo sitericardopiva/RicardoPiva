@@ -8,10 +8,9 @@
     gap: 5%   
 }
 
-
-
 .container h1{
     font-size: 3.2rem;
+    font-family: var(--font-lucida-bright);
 }
 
 .container p{
@@ -64,4 +63,9 @@
 
 .input{
     caret-color: white;
+    font-family: var(--font-gotham-light),
+}
+
+.container textarea {
+    font-family: var(--font-gotham-light),
 }

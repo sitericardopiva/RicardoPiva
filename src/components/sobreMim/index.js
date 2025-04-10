@@ -19,15 +19,17 @@ export default function SobreMim({foto}){
                     <div className={styles.textcontent}>
                         <h1>Ricardo Piva</h1>
                         <p>
-                            Lorem Ipsum is simply dummy text of the  <br />   
-                            printing and typesetting industry. Lorem <br />
-                            Ipsum has been the industry&aposs standard <br />
-                            dummy text . <br />
+                            Lorem Ipsum is simply dummy text of the 
+                            printing and typesetting industry. Lorem 
+                            Ipsum has been the industry's standard 
+                            dummy text . 
                             <br />
-                            Ever since the 1500s, when an <br />
-                            unknown printer took a galley of type and <br />
-                            scrambled it to make a type specimen book. <br />
-                            It has survived not only five <br />
+                            <br />
+
+                            Ever since the 1500s, when an 
+                            unknown printer took a galley of type and 
+                            scrambled it to make a type specimen book. 
+                            It has survived not only five 
                             centuries.
                         </p>
                     </div>

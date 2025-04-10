@@ -17,10 +17,21 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const lucidaBright = localFont({
+  src: "./fonts/LucidaBright.ttf",
+  variable: "--font-lucida-bright",
+  weight: "100 900",
+});
+const gothamLight = localFont({
+  src: "./fonts/GothamLight.ttf",
+  variable: "--font-gotham-light",
+  weight: "100 900",
+});
+
 
 export const metadata = {
-  title: "Exemplo title",
-  description: "Exemplo description.",
+  title: "Ricardo Piva Advocacia",
+  description: "Ricardo Piva Advocacia",
   charset: "utf-8",
   openGraph: {
     title: "IDE",
@@ -59,7 +70,7 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"></link>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${lucidaBright.variable} ${gothamLight.variable} antialiased`}
       >
         <React.Fragment>
           <Navbar contato={contato} nav={nav} />

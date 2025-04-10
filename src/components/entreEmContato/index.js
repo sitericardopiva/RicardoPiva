@@ -82,7 +82,7 @@ export default function EntreEmContato() {
     return (
         <form onSubmit={handleSubmit} className={styles.container}>
             <div className={styles.container}>
-                <h1>Entre em Contato</h1>
+                <h1>CONTATO</h1>
                 <div className={styles.smalltextbox}>
                     <input
                         type="text"
