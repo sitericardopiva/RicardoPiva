@@ -56,8 +56,8 @@
 .error {
     color: red;
     opacity: 0.8;
-    font-size: 0.875rem; /* Ajuste opcional para o tamanho da fonte */
-    margin-top: 0.25rem; /* Ajuste opcional para espaçamento */
+    font-size: 0.875rem;
+    margin-top: 0.25rem; 
 }
 
 

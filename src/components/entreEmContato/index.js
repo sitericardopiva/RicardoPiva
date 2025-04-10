@@ -87,6 +87,7 @@ export default function EntreEmContato() {
                     <input
                         type="text"
                         name="nome"
+                        className={styles.input}
                         placeholder="Nome"
                         value={formData.nome}
                         onChange={handleInputChange}
@@ -105,6 +106,7 @@ export default function EntreEmContato() {
                     <input
                         type="text"
                         name="telefone"
+                        className={styles.input}
                         placeholder="Telefone"
                         value={formData.telefone}
                         onChange={handleInputChange}
@@ -125,6 +127,7 @@ export default function EntreEmContato() {
                     <input
                         type="email"
                         name="email"
+                        className={styles.input}
                         placeholder="E-mail"
                         value={formData.email}
                         onChange={handleInputChange}

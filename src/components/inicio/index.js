@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import styles from "./inicio.module.css";
-import logoText from "../../../public/uploads/rp-logo-text.png"
+import logoText from "../../../public/uploads/rp-text.png"
 
 export default function Inicio(props) {
   return (
