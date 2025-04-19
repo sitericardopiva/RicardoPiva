@@ -21,7 +21,7 @@ function Servico(servico) {
 export default function ServicosHome({ titulo, servicos, logoServicos }) {
   return (
     <>
-      <div className={styles.container}>
+      <div id="areasAtuacao" className={styles.container}>
         <h2 className={styles.titleText}>{titulo}</h2>
         <div className={styles.serviceFrame}>
             {servicos &&

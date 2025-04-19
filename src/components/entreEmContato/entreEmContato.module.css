@@ -71,3 +71,15 @@
 .container textarea {
     font-family: var(--font-gotham-light),
 }
+
+.inputErro {
+    animation: erroBorda 2s ease-in-out;
+    border: 0.25vh solid red !important;
+  }
+  
+  @keyframes erroBorda {
+    0%   { border-color: red; }
+    50%  { border-color: darkred; }
+    100% { border-color: red; }
+  }
+  

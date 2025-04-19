@@ -7,7 +7,7 @@ import imagem from "../../../public/uploads/rp-escritorio.jpg"
 export default function Inicio() {
   return (
     <>
-      <div className={styles.container}>
+      <div id="inicio" className={styles.container}>
         <Image
           src={imagem}
           fill

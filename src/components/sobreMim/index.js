@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function SobreMim({foto}){
     return(
         <>
-        <div className={styles.container}> 
+        <div id="sobreMim" className ={styles.container}> 
             <div className={styles.wrapper}>
                 <div className={styles.border}>
                     <div className={styles.imagem}>
