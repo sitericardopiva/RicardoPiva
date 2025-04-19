@@ -180,7 +180,7 @@ export default function EntreEmContato() {
                             justifyContent: "center",
                         }}
                     >
-                        ENVIAR
+                        <p>ENVIAR</p>
                     </button>
                 </div>
             </div>

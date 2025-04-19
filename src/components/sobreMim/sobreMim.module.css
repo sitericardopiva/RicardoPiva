@@ -42,11 +42,11 @@
 .textcontent h1 {
   font-family: var(--font-lucida-bright);
   font-size: 4.2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 .textcontent p {
   font-family: var(--font-gotham-light);
-  font-size: 2.5rem;
+  font-size: 1.6rem;
 }
   

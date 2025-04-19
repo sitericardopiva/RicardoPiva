@@ -19,18 +19,27 @@ export default function SobreMim({foto}){
                     <div className={styles.textcontent}>
                         <h1>Ricardo Piva</h1>
                         <p>
-                            Lorem Ipsum is simply dummy text of the 
-                            printing and typesetting industry. Lorem 
-                            Ipsum has been the industry's standard 
-                            dummy text . 
-                            <br />
-                            <br />
-
-                            Ever since the 1500s, when an 
-                            unknown printer took a galley of type and 
-                            scrambled it to make a type specimen book. 
-                            It has survived not only five 
-                            centuries.
+                            Dr. Ricardo Piva
+                            Bacharel em Direito pela Universidade Federal de Pelotas.
+                        </p>
+                        <br/>
+                        <p>
+                            Profissional com ampla atuação em diversas áreas do direito cível, 
+                            com destaque para contenciosos envolvendo instituições financeiras,
+                            empresas de análises e informações de crédito. 
+                        </p>
+                        <br/>
+                        <p>
+                            Também tem marcada atuação na área jurídica relacionada 
+                            ao ramo da construção civil, prestando consultoria ativa
+                            os diferentes segmentos, além de atuação na resolução de
+                            conflitos relacionados incorporadoras, construtoras,
+                            investidores, mutuários, e pessoas físicas em geral.
+                        </p>
+                        <br/>
+                        <p>
+                            Tem reconhecida e efetiva atuação juntos aos tribunais do RS,
+                            SC e PR, bem como nos tribunais superiores
                         </p>
                     </div>
                 </div>
@@ -39,3 +48,6 @@ export default function SobreMim({foto}){
         </>
     )
 }
+
+
+

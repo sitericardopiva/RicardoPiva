@@ -12,13 +12,12 @@ export default function Home() {
   const servicos = handleJSONfiles("./content/servicos");
 
   const tituloHome = home.inicioHome.titulo;
-  const imagemHome = home.inicioHome.imagem;
   const imagemSobre = home.sobre.imagem;
   const logoServicos = home.servicos.logo;
 
   return (
     <>
-      <Inicio titulo={tituloHome} imagem={imagemHome} />
+      <Inicio titulo={tituloHome} />
       <SobreMim foto={imagemSobre} />
       <ServicosHome
         titulo={"ÁREAS DE ATUAÇÃO"}
