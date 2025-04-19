@@ -20,7 +20,7 @@ export default function Home() {
       <Inicio titulo={tituloHome} />
       <SobreMim foto={imagemSobre} />
       <ServicosHome
-        titulo={"ÁREAS DE ATUAÇÃO"}
+        titulo={"Áreas de Atuação"}
         servicos={servicos}
         logoServicos={logoServicos}
       /> 
