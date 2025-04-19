@@ -36,6 +36,7 @@
 .textcontent {
   width: 100%;
   padding-left: 8rem;
+  padding-right: 1.5rem;
   color: #A7A9AC;
 }
 
@@ -48,6 +49,7 @@
 .textcontent p {
   font-family: var(--font-gotham-light);
   font-size: 1.6rem;
+  text-align: justify;
   
 }
   
