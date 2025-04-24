@@ -15,7 +15,8 @@
 
 .container p{
     font-size: 1.0rem;    
-    font-family: var(--font-lucida-bright);
+    font-family: var(--font-lucida-bright);  
+    color: #A7A9AC;
 }
 
 .smalltextbox{
@@ -42,16 +43,13 @@
     align-items: center;
     flex-direction: column;
     border-radius: 3rem;
-    transition: background-color 0.1s ease-in-out;
     transition: transform 0.1s ease-in-out;
     
     
 }
 
 .sendButton:hover{
-    background-color: #A7A9AC;
-    color: #083050;
-    transform: scale(1.15);
+    transform: scale(1.18);
 }
 
 
@@ -72,14 +70,5 @@
     font-family: var(--font-gotham-light),
 }
 
-.inputErro {
-    animation: erroBorda 2s ease-in-out;
-    border: 0.25vh solid red !important;
-  }
-  
-  @keyframes erroBorda {
-    0%   { border-color: red; }
-    50%  { border-color: darkred; }
-    100% { border-color: red; }
-  }
+
   
