@@ -82,7 +82,7 @@ export default function EntreEmContato() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className={styles.container}>
+    <form onSubmit={handleSubmit} id="contato" className={styles.container}>
       <div className={styles.container}>
         <h1>Contato</h1>
 
