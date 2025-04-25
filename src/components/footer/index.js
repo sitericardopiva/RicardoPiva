@@ -27,7 +27,7 @@ export default function Footer() {
         <h1>Localização</h1>
         <div className={styles.map}>
           <iframe
-            src={`https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=Rua Felipe Neri, 298 - Auxiliadora, Porto Alegre, RS`}
+            src={`https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=Rua Felipe Neri, 296 - Auxiliadora, Porto Alegre, RS`}
             width="100%"
             height="100%"
             style={{ border: 0 }}
