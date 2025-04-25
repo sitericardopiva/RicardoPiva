@@ -6,7 +6,8 @@
   height: 55%;
   background-color: #083050;  
   color: #FFFFFF;
-  font-family: 'Gotham', sans-serif; /* Set footer text font */
+  font-family: 'Gotham', sans-serif; 
+  overflow: hidden; /* Isso aq é um quebra galho, tornar responsivo depois de finalizado */
 }
 
 .footer h1 {
