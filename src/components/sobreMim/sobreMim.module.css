@@ -18,7 +18,7 @@
 
 .border{
   width: 100%;
-  height: 105vh;
+  padding: 5rem 0;
   border: 0.5vh solid #083050;
   display: flex;
   align-items: center;
@@ -26,17 +26,17 @@
 }
 
 .imagem{
-  width: 26rem;
+  width: 30rem;
   height: 85%;
   top: 50%;
   transform: translateY(-50%);
   position: absolute;
-  left: -20rem;
+  left: -22rem;
 }
 
 .textcontent {
   width: 100%;
-  padding-left: 8rem;
+  padding-left: 10rem;
   padding-right: 1.5rem;
   color: #A7A9AC;
 }
@@ -89,6 +89,7 @@
   .border{
     height: fit-content;
     flex-direction: column-reverse;
+    padding: 0;
   }
   .textcontent{
     padding-left: 5%;
