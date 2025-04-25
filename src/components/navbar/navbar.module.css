@@ -1,11 +1,10 @@
 header .logo {
   position: relative;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
 }
-.navbar h3{
-  font-family: var(--font-lucida-bright);
-}
+
+
 .cabecalho {
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
   top: 0;
@@ -15,17 +14,12 @@ header .logo {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 4.0rem;
-  padding: 0 2rem;
+  height: 6rem;
+  padding: 0 4rem;
   background-color: #202020;
   color: white;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 500;
-}
-
-.navbar {
-  margin-left: auto;
-  margin-right: 100px;
 }
 
 .anchorStuff a {
