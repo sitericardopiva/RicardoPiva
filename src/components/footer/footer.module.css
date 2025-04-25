@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; /* permite empilhar em telas menores */
+  flex-wrap: wrap; 
   width: 100%;
   background-color: #083050;
   color: #FFFFFF;
