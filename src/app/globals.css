@@ -9,6 +9,7 @@
 html {
   background-color: #202020;
   scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 * {
@@ -125,6 +126,11 @@ header .navBtn {
 header nav {
   display: flex;
   align-items: center;
+}
+
+.content-container {
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 1024px) {

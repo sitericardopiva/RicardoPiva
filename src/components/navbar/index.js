@@ -19,7 +19,7 @@ export default function Navbar({ contato, nav }) {
   const [solid, setSolid] = useState(false); // controla se a navbar é sólida ou transparente
 
   useEffect(() => {
-  const hero = document.getElementById("inicio"); // seção do topo (Inicio.jsx)
+  const hero = document.getElementById("hero-logo"); // seção do topo (Inicio.jsx)
   if (!hero) {
     setSolid(true);
     return;
@@ -81,7 +81,7 @@ export default function Navbar({ contato, nav }) {
           >
             <FaTimes />
           </button>
-          <div className={styles.links}>
+          {/* <div className={styles.links}>
             <button className={styles.navBtn} onClick={toggleNavbar}>
               <a href={contato.linkedin} target="_blank">
                 <FaLinkedin className={styles.socialNetworks} />
@@ -97,7 +97,7 @@ export default function Navbar({ contato, nav }) {
                 <FaInstagram className={styles.socialNetworks} />
               </a>
             </button>
-          </div>
+          </div> */}
         </nav>
         <button className={styles.navBtn} onClick={toggleNavbar}>
           <FaBars />

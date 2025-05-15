@@ -15,7 +15,7 @@ export default function Inicio() {
           alt="Imagem Inicio"
           className={styles.initImg}
         />
-        <Image className={styles.title} src={logoText} />
+        <Image className={styles.title} src={logoText} id="hero-logo" />
       </div>
     </>
   );

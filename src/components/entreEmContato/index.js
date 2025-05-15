@@ -84,7 +84,6 @@ export default function EntreEmContato() {
   return (
     <form id="contato" onSubmit={handleSubmit} className={styles.container}>
       <div className={styles.container}>
-        <span></span>
         <h1>Contato</h1>
 
         <div className={styles.smalltextbox}>
@@ -175,7 +174,6 @@ export default function EntreEmContato() {
             style={{
               height: "100%",
               width: "100%",
-              backgroundColor: "transparent",
               border: "none",
               cursor: "pointer",
               display: "flex",

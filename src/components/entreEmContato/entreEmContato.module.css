@@ -1,15 +1,16 @@
 .container{
     width: 100%;
     height: 100%;
+    padding-bottom: 2rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     color: #A7A9AC;
-    gap: 5%   
+    gap: 2rem; 
 }
 
 .container h1{
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-family: var(--font-lucida-bright);
 }
 
@@ -33,23 +34,30 @@
     border: 0.25vh solid #A7A9AC;
 }
 
-.sendButton{
-    
-    width: 6.5rem;
-    height: 2.5rem;
-    background-color: transparent;
-    border: 0.25vh solid #A7A9AC;
+.sendButton{    
+    height: 3rem;
+    padding: 0 2rem;
+    background-color: #A7A9AC !important;
     display: flex;
     align-items: center;
     flex-direction: column;
     border-radius: 3rem;
-    transition: transform 0.1s ease-in-out;
-    color:#a7a9ac;
-    
+    transition: transform 0.1s ease-in-out;    
+}
+
+.sendButton button {
+    background-color: #A7A9AC;
+}
+
+.sendButton button p {
+    color: #083050;
+    font-size: 1rem;
 }
 
 .sendButton:hover{
-    transform: scale(1.18);
+    color: #083050;
+    background-color: #A7A9AC;
+    transform: scale(1.05);
 }
 
 
@@ -63,11 +71,13 @@
 
 .input{
     caret-color: white;
-    font-family: var(--font-gotham-light),
+    font-family: var(--font-gotham-light);
+    font-size: 1.5rem;
 }
 
 .container textarea {
-    font-family: var(--font-gotham-light),
+    font-family: var(--font-gotham-light);
+    font-size: 1.5rem;
 }
 
 

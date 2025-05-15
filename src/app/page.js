@@ -18,13 +18,15 @@ export default function Home() {
   return (
     <>
       <Inicio titulo={tituloHome} />
-      <SobreMim foto={imagemSobre} />
-      <ServicosHome
-        titulo={"Áreas de Atuação"}
-        servicos={servicos}
-        logoServicos={logoServicos}
-      /> 
-      <EntreEmContato/>
+      <div className="content-container">
+        <SobreMim foto={imagemSobre} />
+        <ServicosHome
+          titulo={"Áreas de Atuação"}
+          servicos={servicos}
+          logoServicos={logoServicos}
+        /> 
+        <EntreEmContato/>
+      </div>
     </>
   );
 }
