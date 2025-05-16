@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "./footer.module.css";
-import { FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
+import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
 
 export default function Footer() {
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
@@ -10,16 +10,20 @@ export default function Footer() {
     <div className={styles.footer}>
       <div className={styles.container}>
         <h1>Endereço</h1>
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <FaMapMarkerAlt style={{ marginRight: "8px" }} />
+        <div className={styles.icons}>
+          <FaMapMarkerAlt  style={{ marginRight: "8px" }} size={28} />
           <h2>
             Rua Felipe Neri, 296/298, sala 404, Auxiliadora, Porto Alegre/RS,
             90440-150
           </h2>
         </div>
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <FaEnvelope style={{ marginRight: "8px" }} />
+        <div className={styles.icons}>
+          <FaEnvelope style={{ marginRight: "8px" }} size={28} />
           <h2>piva.ricardoadv@gmail.com</h2>
+        </div>
+        <div className={styles.icons}>
+          <FaPhone style={{ marginRight: "8px" }} size={28} />
+          <h2>(51) 99999-9999</h2>
         </div>
       </div>
 
