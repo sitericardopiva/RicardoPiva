@@ -1,5 +1,6 @@
 // src/app/api/sendemail/route.js
 import nodemailer from 'nodemailer';
+export const runtime = 'nodejs';
 
 export async function POST(req) {
   const body = await req.json();
