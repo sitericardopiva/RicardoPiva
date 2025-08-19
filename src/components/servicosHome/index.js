@@ -4,6 +4,7 @@ import styles from "./servicosHome.module.css";
 import Image from "next/image";
 
 function Servico(servico) {
+  
   return (
     <>
       <div className={styles.serviceContainer}>

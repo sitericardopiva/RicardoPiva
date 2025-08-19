@@ -52,6 +52,7 @@
 }
 
 .serviceText {
+  white-space: pre-line;
   font-family: var(--font-gotham-light);
   color: #A7A9AC;
   font-size: 1.2rem;

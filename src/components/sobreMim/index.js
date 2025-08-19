@@ -19,27 +19,30 @@ export default function SobreMim({foto}){
                     <div className={styles.textcontent}>
                         <h1>Ricardo Piva</h1>
                         <p>
-                            Dr. Ricardo Piva
-                            Bacharel em Direito pela Universidade Federal de Pelotas.
+                            Bacharel em Direito pela Universidade Federal de Pelotas (2007).
                         </p>
                         <br/>
                         <p>
-                            Profissional com ampla atuação em diversas áreas do direito cível, 
-                            com destaque para contenciosos envolvendo instituições financeiras,
-                            empresas de análises e informações de crédito. 
+                            Profissional com ampla atuação em diversas áreas do Direito Cível, com destaque
+                            para contenciosos envolvendo instituições financeiras, empresas de análises e
+                            informações de crédito.
+ 
                         </p>
                         <br/>
                         <p>
-                            Também tem marcada atuação na área jurídica relacionada 
-                            ao ramo da construção civil, prestando consultoria ativa
-                            os diferentes segmentos, além de atuação na resolução de
-                            conflitos relacionados incorporadoras, construtoras,
-                            investidores, mutuários, e pessoas físicas em geral.
+                            Também tem marcada atuação na área jurídica relacionada ao ramo da construção
+                            civil, prestando consultoria ativa nos diferentes segmentos, além de atuação na
+                            resolução de conflitos relacionados a incorporadoras, construtoras, investidores,
+                            mutuários e pessoas físicas em geral.
+
+
                         </p>
                         <br/>
                         <p>
-                            Tem reconhecida e efetiva atuação juntos aos tribunais do RS,
-                            SC e PR, bem como nos tribunais superiores
+                            Tem reconhecida e efetiva atuação junto aos tribunais do Rio Grande do Sul (RS),
+                            Santa Catarina (SC) e Paraná (PR), bem como nos tribunais superiores,
+                            especialmente Superior Tribunal de Justiça (STJ).
+
                         </p>
                     </div>
                 </div>
