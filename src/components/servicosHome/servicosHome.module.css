@@ -35,7 +35,7 @@
   max-width: 25rem;
   min-height: 21rem;
   background-color: #012E46;
-  border: 2px solid #A7A9AC;
+  border: 0.25vh solid #A7A9AC;
 }
 
 .serviceName {
