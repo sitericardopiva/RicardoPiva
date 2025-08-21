@@ -5,12 +5,12 @@ import { handleJSONfile } from "@/utils/jsonHandler";
 import React from "react";
 import SobreMim from "@/components/sobreMim";
 import EntreEmContato from "@/components/entreEmContato";
-
+import BlogArtigo from "@/components/blogArtigos";
 
 export default function Home() {
   const home = handleJSONfile(`./content/paginas/home.json`);
   const servicos = handleJSONfiles("./content/servicos");
-
+  const artigos = handleJSONfiles("./contetn/artigos")
   const tituloHome = home.inicioHome.titulo;
   const imagemSobre = home.sobre.imagem;
   const logoServicos = home.servicos.logo;
@@ -26,6 +26,7 @@ export default function Home() {
           logoServicos={logoServicos}
         /> 
         <EntreEmContato/>
+        <BlogArtigo artigos={artigos}/>
       </div>
     </>
   );
