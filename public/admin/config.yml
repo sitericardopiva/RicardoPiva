@@ -438,3 +438,21 @@ collections:
           - { label: "Email", name: "email", widget: "string" }
           - { label: "Instagram", name: "instagram", widget: "string" }
           - { label: "Celular", name: "celular", widget: "string" }
+   
+  - name: "artigos"
+    label: "Artigos"
+    folder: "content/artigos"
+    create: true
+    slug: "{{slug}}"
+    path: "{{slug}}/index"
+    fields:
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Resumo", name: "summary", widget: "text", required: false }
+      - { label: "Imagem de capa", name: "cover", widget: "image", required: false }
+      - label: "Anexos"
+        name: "attachments"
+        widget: "list"
+        required: false
+        field: { label: "Arquivo", name: "file", widget: "file" }
+      - { label: "Conteúdo", name: "body", widget: "markdown" }

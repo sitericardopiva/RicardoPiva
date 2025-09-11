@@ -1,16 +1,51 @@
-import { FaCalendar, FaDownload, FaRegCalendar } from "react-icons/fa";
+import Link from "next/link";
+import { FaRegCalendar, FaDownload } from "react-icons/fa";
 import styles from "./artigos.module.css";
 
-export default function Artigos() {
+export default function Artigos({ items = [] }) {
   return (
     <div className={styles.container}>
       <h2 className={styles.titleText}>Artigos</h2>
-      <div className={styles.card}>
-        <h3>Nome do artigo</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <span><FaRegCalendar />Data: 08/09/2025</span>
-        <button className={styles.button}><FaDownload size={16} /> Baixar</button>
-      </div>
+
+      {items.length === 0 && (
+        <p className={styles.empty}>Nenhum artigo publicado ainda.</p>
+      )}
+
+      {items.map((item) => {
+        const hasAttachment =
+          Array.isArray(item.attachments) && item.attachments.length > 0;
+        const firstAttachment = hasAttachment ? item.attachments[0] : null;
+
+        return (
+          <div key={item.slug} className={styles.card}>
+            <h3>
+              <Link href={`/artigos/${item.slug}`}>{item.title}</Link>
+            </h3>
+
+            {item.summary && <p>{item.summary}</p>}
+
+            <span className={styles.date}>
+              <FaRegCalendar />{" "}
+              Data:{" "}
+              {item.date
+                ? new Date(item.date).toLocaleDateString("pt-BR")
+                : "—"}
+            </span>
+
+            <div className={styles.actions}>
+              <Link href={`/artigos/${item.slug}`} className={styles.buttonOutline}>
+                Ler artigo
+              </Link>
+
+              {firstAttachment && (
+                <a href={firstAttachment.file} download className={styles.button}>
+                  <FaDownload size={16} /> Baixar
+                </a>
+              )}
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }
