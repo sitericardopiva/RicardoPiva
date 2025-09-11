@@ -48,6 +48,44 @@
   align-items: center;
 }
 
+.developedByLink {
+  display: flex;
+  align-items: center;
+  color: #777;
+}
+
+.developedBy {
+  display: flex;
+  flex-direction: row;       
+  align-items: center;       
+  justify-content: center;   
+  width: 100%;
+  padding: 1.5rem 0;
+  background-color: #012E46; 
+  color: #f1f1f1;
+  font-family: 'Gotham';
+  gap: 0.5rem;               
+}
+
+.developedByCover {
+  width: 40px;
+  height: auto;
+}
+
+.ideLogo {
+  width: 100%;
+  height: auto;
+}
+
+.developedByText {
+  font-family: var(--font-gotham-light);
+  font-size: 1rem; 
+  margin-left: 1rem; 
+  letter-spacing: 0.5px;
+  padding-bottom: 0.4rem;
+}
+
+
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
