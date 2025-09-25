@@ -1,4 +1,3 @@
-export const runtime = "nodejs";
 import ServicosHome from "@/components/servicosHome";
 import Inicio from "@/components/inicio";
 import { handleJSONfiles } from "@/utils/jsonHandler";
@@ -7,12 +6,12 @@ import React from "react";
 import SobreMim from "@/components/sobreMim";
 import EntreEmContato from "@/components/entreEmContato";
 import Artigos from "@/components/artigos";
-import { loadRecentArticles } from "@/lib/article-loader";
 
-export default async function Home() {
+
+export default function Home() {
   const home = handleJSONfile(`./content/paginas/home.json`);
   const servicos = handleJSONfiles("./content/servicos");
-  const artigosRecentes = await loadRecentArticles();
+
   const tituloHome = home.inicioHome.titulo;
   const imagemSobre = home.sobre.imagem;
   const logoServicos = home.servicos.logo;
@@ -27,7 +26,7 @@ export default async function Home() {
           servicos={servicos}
           logoServicos={logoServicos}
         /> 
-        <Artigos items={artigosRecentes}/>
+        <Artigos />
         <EntreEmContato/>
       </div>
     </>
