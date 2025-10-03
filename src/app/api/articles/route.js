@@ -3,13 +3,14 @@ import { NextResponse } from 'next/server';
 export async function GET() {
   // 1. Read token from server-only env variable
   const token = process.env.CONTENTFUL_API_TOKEN;
+  const spaceId = proccess.env.SPACE_ID;
   console.log(token);
   if (!token) {
     return NextResponse.json({ error: 'Token not set' }, { status: 500 });
   }
 
   // 2. Call the external API with the token in the Authorization header
-  const externalRes = await fetch('https://cdn.contentful.com/spaces/6qzqsw3w1qn1/entries', {
+  const externalRes = await fetch('https://cdn.contentful.com/spaces/' + spaceId + '/entries', {
     headers: {
       Authorization: `Bearer ${token}`,
       Accept: 'application/json',
