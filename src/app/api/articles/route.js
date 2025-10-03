@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 export async function GET() {
   // 1. Read token from server-only env variable
   const token = process.env.CONTENTFUL_API_TOKEN;
-  const spaceId = proccess.env.SPACE_ID;
+  const spaceId = process.env.SPACE_ID;
   console.log(token);
   if (!token) {
     return NextResponse.json({ error: 'Token not set' }, { status: 500 });
