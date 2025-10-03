@@ -5,6 +5,7 @@ import { handleJSONfile } from "@/utils/jsonHandler";
 import React from "react";
 import SobreMim from "@/components/sobreMim";
 import EntreEmContato from "@/components/entreEmContato";
+import Artigos from "@/components/artigos";
 
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
           servicos={servicos}
           logoServicos={logoServicos}
         /> 
+        <Artigos />
         <EntreEmContato/>
       </div>
     </>

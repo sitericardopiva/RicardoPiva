@@ -71,6 +71,9 @@ export default function Navbar({ contato, nav }) {
             <a href="#areasAtuacao">ÁREAS DE ATUAÇÃO</a>
           </h3>
           <h3 className={styles.anchorStuff} onClick={toggleNavbar}>
+            <a href="#artigos">ARTIGOS</a>
+          </h3>
+          <h3 className={styles.anchorStuff} onClick={toggleNavbar}>
             <a href="#contato">CONTATO</a>
           </h3>
 
