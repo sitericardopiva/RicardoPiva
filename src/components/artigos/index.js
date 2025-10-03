@@ -26,7 +26,7 @@ export default function Artigos() {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="artigos">
       <h2 className={styles.titleText}>Artigos</h2>
       <div className={styles.frame}>
         {articles.map((article, i) => {

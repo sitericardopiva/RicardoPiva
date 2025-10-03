@@ -21,10 +21,6 @@ export default function Footer() {
           <FaEnvelope style={{ marginRight: "8px" }} size={28} />
           <h2>piva.ricardoadv@gmail.com</h2>
         </div>
-        <div className={styles.icons}>
-          <FaPhone style={{ marginRight: "8px" }} size={28} />
-          <h2>(51) 99999-9999</h2>
-        </div>
       </div>
 
       <div className={styles.container}>
